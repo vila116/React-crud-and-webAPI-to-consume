@@ -1,7 +1,5 @@
+import React from 'react'; 
 const DcandidatesFrom=(props)=>{
-    return(<div>
-        <h2>form DCandidatesFrom</h2>
-        <p>This is a simple component.</p>
-    </div>);
+    return(<div>form DCandidatesFrom</div>);
 }
 export default DcandidatesFrom;
