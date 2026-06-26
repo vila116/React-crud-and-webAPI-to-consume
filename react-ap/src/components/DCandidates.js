@@ -25,7 +25,12 @@ const Dcandidates =(props)=>{
                 <Grid size={6}>
                     <TableContainer>
                         <Table>
-                           <TableHead>
+                           <TableHead sx={{
+                            '& .MuiTableCell-root':{
+                                fontSize :'1.25rem',
+                                fontWeight:'bold',
+                            },
+                           }}>
                             <TableRow>
                                 <TableCell>Name</TableCell>
                                 <TableCell>Mobile</TableCell>
@@ -36,7 +41,7 @@ const Dcandidates =(props)=>{
                                 {
                                     props.dCandidatelist.map((record,index)=>{
                                         return(
-                                            <TableRow key={index} >
+                                            <TableRow key={index} hover>
                                                 <TableCell>{record.fullName}</TableCell>
                                                 <TableCell>{record.mobile}</TableCell>
                                                 <TableCell>{record.bloodGroup}</TableCell>
