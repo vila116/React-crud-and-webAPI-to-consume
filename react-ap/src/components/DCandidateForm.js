@@ -29,9 +29,39 @@ const DcandidatesFrom=(props)=>{
                 label="Full Name"
                 variant="outlined"
                 value ={values.fullname}
-                onchange={handleInputChange}/>
+                onChange={handleInputChange}
+                />
+                <TextField
+                name ="email"
+                label="Email"
+                variant="outlined"
+                value ={values.email}
+                onChange={handleInputChange}
+                />
+                <div>bloodGroup</div>
             </Grid>
             <Grid item xs={6}></Grid>
+            <TextField
+                name ="mobile"
+                label="Mobile"
+                variant="outlined"
+                value ={values.mobile}
+                onChange={handleInputChange}
+                />
+                <TextField
+                name ="age"
+                label="Age"
+                variant="outlined"
+                value ={values.age}
+                onChange={handleInputChange}
+                />
+                <TextField
+                name ="address"
+                label="Address"
+                variant="outlined"
+                value ={values.address}
+                onChange={handleInputChange}
+                />
            </Grid>
         </form>
     );
